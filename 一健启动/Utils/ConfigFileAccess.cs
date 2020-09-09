@@ -8,5 +8,9 @@ namespace 一健启动.Utils
 {
     class ConfigFileAccess
     {
+        public void readConfig()
+        {
+
+        }
     }
 }
