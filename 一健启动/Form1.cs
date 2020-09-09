@@ -63,6 +63,12 @@ namespace 一健启动
             new EditStartCount(listView.SelectedItems[0].Text, int.Parse(listView.SelectedItems[0].SubItems[1].Text)).ShowDialog();
         }
 
-        
+        private void CheckAll_CheckedChanged(object sender, EventArgs e)
+        {
+            foreach(ListViewItem item in listView.Items)
+            {
+                item.Checked = (sender as CheckBox).Checked;
+            }
+        }
     }
 }
