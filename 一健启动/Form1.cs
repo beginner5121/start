@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using 一键启动.Utils;
+using System.Xml;
+
 
 namespace 一键启动
 {
@@ -23,6 +25,8 @@ namespace 一键启动
             this.listView.HeaderStyle = ColumnHeaderStyle.Nonclickable;
             GetStarPrograms();
         }
+
+
 
         private void GetStarPrograms()
         {
@@ -104,7 +108,6 @@ namespace 一键启动
                     }
                     CheckAll.Checked = false;
                     GetStarPrograms();
-
                 }
             }
             else
@@ -123,7 +126,6 @@ namespace 一键启动
                     MessageBox.Show("请点击或者勾选要删除的程序!", "一键启动");
 
                 }
-
             }
         }
 

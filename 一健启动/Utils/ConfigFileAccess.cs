@@ -77,7 +77,7 @@ namespace 一键启动.Utils
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show(e.Message, "获取配置");
                 return false;
 
             }
@@ -140,6 +140,11 @@ namespace 一键启动.Utils
             }
         }
 
+        /// <summary>
+        /// 启动程序
+        /// </summary>
+        /// <param name="Index"></param>
+        /// <param name="Count"></param>
         public async void StarApp(int Index, string Count)
         {
             int count = int.Parse(Count);
@@ -157,7 +162,7 @@ namespace 一键启动.Utils
                 {
                     for (int i = 0; i < count; i++)
                     {
-                       await Task.Run(() => System.Diagnostics.Process.Start(filePath));
+                        await Task.Run(() => System.Diagnostics.Process.Start(filePath));
                     }
                 }
             }
@@ -165,8 +170,8 @@ namespace 一键启动.Utils
             {
                 MessageBox.Show(e.Message);
             }
-
         }
+
 
     }
 }
