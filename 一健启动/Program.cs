@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 一健启动
+namespace 一键启动
 {
     static class Program
     {
